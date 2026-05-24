@@ -22,3 +22,27 @@ The gold layer is the business level data representation structured to support a
 | gender          | NVARCHAR(50)  | The gender of the customer(Eg: Male or Female)                                        |
 | birth_date      | DATE          | The date of birth of the customer formatted as YYYY-MM-DD(Eg: 1971-10-06)             |
 | Create_date     | DATE          | The date and time when the customer record was created in the system.                 |
+
+
+**2.Gold.dim_products**
+
+**•	Purpose **: Provides information about the products and their attributes.
+
+**•	Columns** : 
+
+| **Column name**      | **Data type** | **Description**                                                                            |
+| -------------------- | ------------- | ------------------------------------------------------------------------------------------ |
+| product_key          | INT           | Surrogate key uniquely identifying each product record in the product dimension table.     |
+| product_id           | INT           | A unique identifier assigned to the product for internal tracking and referencing.         |
+| product_name         | NVARCHAR      | Descriptive name of the product ,including key details such as type, name, and size        |
+| category_id          | NVARCHAR      | A unique identifier for the product’s category,linking to its higher level classification. |
+| category             | NVARCHAR      | The boarder classification of the product (Eg: Bike, Components) to group related items.   |
+| subcategory          | NVARCHAR      | A more detailed classification of the product within the category such as product type.    |
+| maintenance_required | NVARCHAR      | Indicates whether the product required maintenance or not(Eg: yes or no)                   |
+| cost                 | INT           | Cost or base price of the product, measured in monetary units.                             |
+| product_line         | NVARCHAR      | The specific product line or series to which the product belongs(Eg: road,mountain)        |
+| start_date           | DATE          | The date when the product became available for sale or use.                                |
+
+
+
+
