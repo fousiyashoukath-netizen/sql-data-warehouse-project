@@ -26,7 +26,7 @@ The gold layer is the business level data representation structured to support a
 
 **2.Gold.dim_products**
 
-**•	Purpose **: Provides information about the products and their attributes.
+ •**Purpose**: Provides information about the products and their attributes.
 
 **•	Columns** : 
 
